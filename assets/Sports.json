@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Al-Rabeaa Sport SD",
+    "img": "https://img.kooora.com/?i=o%2Fh%2F1%2F950%2Falrabiaa-sport-2.png",
+    "url": "https://livestream.almanasa.tv:8128/sport/ch4/ch4_360.m3u8"
+  },
+  {
+    "name": "Al-Rabeaa Sport HD",
+    "img": "https://img.kooora.com/?i=o%2Fh%2F1%2F950%2Falrabiaa-sport-2.png",
+    "url": "https://livestream.almanasa.tv:8128/sport/ch4/ch4_720.m3u8"
+  },
+  {
+    "name": "Al-Rabeaa Sport 1 SD",
+    "img": "https://img.kooora.com/?i=o%2Fh%2F1%2F950%2Falrabiaa-sport-2.png",
+    "url": "https://livestream.almanasa.tv:8129/sport/ch5/ch5_360.m3u8"
+  },
+  {
+    "name": "Al-Rabeaa Sport 1 HD",
+    "img": "https://img.kooora.com/?i=o%2Fh%2F1%2F950%2Falrabiaa-sport-2.png",
+    "url": "https://livestream.almanasa.tv:8129/sport/ch5/ch5_720.m3u8"
+  },
+  {
+    "name": "Al-Rabeaa Sport 3 SD",
+    "img": "https://img.kooora.com/?i=o%2Fh%2F1%2F950%2Falrabiaa-sport-2.png",
+    "url": "https://livestream.almanasa.tv:8125/sport/ch1/ch1_360.m3u8"
+  },
+  {
+    "name": "Al-Rabeaa Sport 3 HD",
+    "img": "https://img.kooora.com/?i=o%2Fh%2F1%2F950%2Falrabiaa-sport-2.png",
+    "url": "https://livestream.almanasa.tv:8125/sport/ch1/ch1_720.m3u8"
+  },
+  {
+    "name": "Al-Iraqi Sport SD",
+    "img": "https://imn.iq/wp-content/uploads/2020/11/4D5BF000-73D9-4268-A52E-34623FC2D026.jpeg",
+    "url": "https://livestream.almanasa.tv:8130/sport/ch6/ch6_360.m3u8"
+  },
+  {
+    "name": "Al-Iraqi Sport HD",
+    "img": "https://imn.iq/wp-content/uploads/2020/11/4D5BF000-73D9-4268-A52E-34623FC2D026.jpeg",
+    "url": "https://livestream.almanasa.tv:8130/sport/ch6/ch6_720.m3u8"
+  },
+  {
+    "name": "Sport SD",
+    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bb/24/5e/bb245ec9-0e98-07a2-a8c2-d0dd3e4cb4d8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+    "url": "https://livestream.almanasa.tv:8135/sport/ch10/ch10_360.m3u8"
+  },
+  {
+    "name": "Sport HD",
+    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bb/24/5e/bb245ec9-0e98-07a2-a8c2-d0dd3e4cb4d8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+    "url": "https://livestream.almanasa.tv:8135/sport/ch10/ch10_720.m3u8"
+  },
+  {
+    "name": "Sport FHD",
+    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bb/24/5e/bb245ec9-0e98-07a2-a8c2-d0dd3e4cb4d8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+    "url": "https://livestream.almanasa.tv:8135/sport/ch10/ch10_1080.m3u8"
+  }
+]

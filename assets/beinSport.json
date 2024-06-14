@@ -1,0 +1,48 @@
+[
+    {
+      "name": "BEINSPORT 1",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_1.png",
+      "url": "http://176.119.29.7:8082/131f26d9-afb0-480e-8690-e46007de9fc8.m3u8"
+    },
+    {
+      "name": "BEINSPORT 2",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_2.png",
+      "url": "http://176.119.29.42:8082/93650306-59d6-451e-bfc0-77fdb23bf6c9.m3u8"
+    },
+    {
+      "name": "BEINSPORT 3",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/Bein_Sports_3.png",
+      "url": "http://176.119.29.42:8082/9ce5782e-0660-4235-b5b1-83a8e2984426.m3u8"
+    },
+    {
+      "name": "BEINSPORT 4",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_MAX_4.png",
+      "url": "http://176.119.29.35:8082/98017c4b-341f-4df4-8bb5-8bc0c57bff48.m3u8"
+    },
+    {
+      "name": "BEINSPORT 5",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_MAX_5.png",
+      "url": "http://176.119.29.17:8082/1fe232ea-d16f-4fc0-9f6d-741ca6cb60ba.m3u8"
+    },
+    {
+      "name": "BEINSPORT 6",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_MAX_6.png",
+      "url": "http://176.119.29.7:8082/637be477-b933-49e7-a9d3-e1298ad2d6e2.m3u8"
+    },
+    {
+      "name": "BEINSPORT 7",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_MAX_7.png",
+      "url": "http://176.119.29.17:8082/331f22a3-d7ab-4726-b4c1-a8462554c443.m3u8"
+    },
+    {
+      "name": "beIN SPORT 8",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_MAX_8.png",
+      "url": "http://176.119.29.78:8082/9ae31c68-bd25-49f8-964d-b2dff929d656.m3u8"
+    },
+    {
+      "name": "beIN SPORT 9",
+      "img": "http://www.vodkom.com:25461/Logo/FRANCE_SPORT/BEIN_SPORTS_MAX_9.png",
+      "url": "http://176.119.29.7:8082/31dc1067-8fa1-4189-bfc2-b0550f8c477b.m3u8"
+    }
+  ]
+

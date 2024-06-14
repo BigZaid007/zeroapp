@@ -1,0 +1,102 @@
+[
+  {
+    "name": "box office",
+    "img": "https://cdn.dribbble.com/users/1731569/screenshots/4571981/media/ea37d37de6bdea6d52d7f216358c9ac1.jpg",
+    "url": "http://stream.shabakaty.com:6001/movies/ch1/ch1_360.m3u8"
+  },
+  {
+    "name": "animation",
+    "img": "https://www.pngall.com/wp-content/uploads/2016/07/Animation-Download-PNG.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch2/ch2_360.m3u8"
+  },
+  {
+    "name": "Movies 1",
+    "img": "https://w7.pngwing.com/pngs/725/684/png-transparent-movie-time-graphic-film-cinema-logo-film-elements-cdr-food-text.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch3/ch3_360.m3u8"
+  },
+  {
+    "name": "Movies 2",
+    "img": "https://altatbeqat.com/wp-content/uploads/2023/01/1675069253-300x300.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch4/ch4_360.m3u8"
+  },
+  {
+    "name": "Rotana Cinema 1",
+    "img": "http://www.vodkom.com:25461/Logo/ARABSAUDIA/Rotana_Cinema_EGY_HD.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch5/ch5_360.m3u8"
+  },
+  {
+    "name": "Rotana Cinema 2",
+    "img": "http://www.vodkom.com:25461/Logo/ARABSAUDIA/Rotana_Cinema_HD.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch6/ch6_360.m3u8"
+  },
+  {
+    "name": "Rotana Classic",
+    "img": "http://www.vodkom.com:25461/Logo/ARABSAUDIA/Rotana_Classic_HD.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch7/ch7_360.m3u8"
+  },
+  {
+    "name": "OSN MOVIES HOLLYWOOD",
+    "img": "https://www.ooredoo.qa/web/wp-content/uploads/2022/05/Channel-Logos-2022-Updated_OSN-Movies-Hollywood.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch8/ch8_360.m3u8"
+  },
+  {
+    "name": "OSN MOVIES ACTION",
+    "img": "http://vodkom.com:25461/Logo/OSN/OSN_Movies_Action.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch9/ch9_360.m3u8"
+  },
+  {
+    "name": "OSN PREMIERE",
+    "img": "https://www.ooredoo.qa/web/wp-content/uploads/2022/05/Channel-Logos-2022-Updated_OSN-Premiere.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch10/ch10_360.m3u8"
+  },
+  {
+    "name": "OSN FAMILY",
+    "img": "https://www.cne-eg.com/uploads/logos/202011135721913.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch11/ch11_360.m3u8"
+  },
+  {
+    "name": "atr cinema",
+    "img": "http://vodkom.com:25461/Logo/OSN/Cinema.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch12/ch12_360.m3u8"
+  },
+  {
+    "name": "ya hala aflam",
+    "img": "https://www.dreamboxgate.com/imgcache/2019/511596_dreambox-sat.com.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch13/ch13_360.m3u8"
+  },
+  {
+    "name": "real px",
+    "img": "https://sawatechnologies.com/wp-content/uploads/2022/09/runlimited.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch15/ch15_360.m3u8"
+  },
+  {
+    "name": "real px family",
+    "img": "https://sawatechnologies.com/wp-content/uploads/2022/09/RFamily.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch16/ch16_360.m3u8"
+  },
+  {
+    "name": "real px unlimited",
+    "img": "https://sawatechnologies.com/wp-content/uploads/2022/09/runlimited.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch17/ch17_360.m3u8"
+  },
+  {
+    "name": "film box",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/45/Filmbox_pl.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch19/ch19_360.m3u8"
+  },
+  {
+    "name": "Mbc 2",
+    "img": "http://www.vodkom.com:25461/Logo/ARABSAUDIA/MBC2_HD.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch23/ch23_360.m3u8"
+  },
+  {
+    "name": "Mbc action",
+    "img": "http://www.vodkom.com:25461/Logo/ARABSAUDIA/MBC_Action.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch24/ch24_360.m3u8"
+  },
+  {
+    "name": "Mbc bollywood",
+    "img": "http://www.vodkom.com:25461/Logo/ARABSAUDIA/MBC_Bollywood_HD.png",
+    "url": "http://stream.shabakaty.com:6001/movies/ch25/ch25_360.m3u8"
+  }
+]

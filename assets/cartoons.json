@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Super Kaos TV",
+    "url": "https://stmv1.cnarlatam.com/novakidstv/novakidstv/playlist.m3u8",
+    "img": "https://i.imgur.com/uOkAHVq.png"
+  },
+  {
+    "name": "Xtrema Anime",
+    "url": "https://stmv1.cnarlatam.com/xtremaanime/xtremaanime/playlist.m3u8",
+    "img": "https://i.imgur.com/yor5owS.png"
+  },
+  {
+    "name": "Adult Swim The Venture Bros",
+    "url": "https://adultswim-vodlive.cdn.turner.com/live/venture-bros/stream_de.m3u8",
+    "img": "https://i.imgur.com/ZwNmt8Y.png"
+  },
+  {
+    "name": "PlanetaTV 90s",
+    "url": "https://mediacpstreamchile.com:1936/8102/8102/playlist.m3u8",
+    "img": "https://i.imgur.com/rtZTw3F.png"
+  },
+  {
+    "name": "Xtrema Retro Cartoons",
+    "url": "https://stmv1.cnarlatam.com/retroinfantil/retroinfantil/playlist.m3u8",
+    "img": "https://i.imgur.com/60ylWbQ.png"
+  },
+  {
+    "name": "Pluto TV Anime All Ages",
+    "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5be4c6311843b56328bce619/master.m3u8?advertisingId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&appVersion=unknown&deviceDNT=0&deviceId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceUA=samsung/SM-T720/10&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&samsung_app_domain=https://play.google.com/store/apps/details?id=com.samsung.android.tvplus&samsung_app_name=Mobile+TV+Plus&us_privacy=1YNY",
+    "img": "https://i.imgur.com/iv8ejiz.png"
+  },
+  {
+    "name": "Dreiko TV",
+    "url": "https://cloudvideo.servers10.com:8081/8138/index.m3u8",
+    "img": "https://i.imgur.com/k8U0e0b.png"
+  },
+  {
+    "name": "Naruto",
+    "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5da0c85bd2c9c10009370984/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS",
+    "img": "https://i.imgur.com/M8X3Kvc.png"
+  },
+  {
+    "name": "Geekdot",
+    "url": "https://stream.ichibantv.com:3764/hybrid/play.m3u8",
+    "img": "https://i.imgur.com/jML1u4O.png"
+  },
+  {
+    "name": "Pokemon Kids TV English",
+    "url": "https://ythlsgo.onrender.com/channel/UCgbfG5HoczHIkpzxLYH-8Ww.m3u8",
+    "img": "https://i.imgur.com/0nDftk7.jpg"
+  },
+  {
+    "name": "Cartoon Network Live Latin America 2",
+    "url": "https://playout.cdn.cartoonnetwork.com.br/playout_06/playlist.m3u8",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cartoon_Network_HD_logo.svg/512px-Cartoon_Network_HD_logo.svg.png"
+  },
+  {
+    "name": "ADN TV+",
+    "url": "https://samsunguk-adn-samsung-fre-qfrlc.amagi.tv/playlist/samsunguk-adn-samsung-fre/playlist.m3u8",
+    "img": "https://i.imgur.com/HQZQyWt.png"
+  },
+  {
+    "name": "Cartoonito Italy",
+    "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(la)/index.m3u8",
+    "img": "https://i.imgur.com/6vYWCD0.png"
+  }
+]
