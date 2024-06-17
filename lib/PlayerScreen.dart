@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+import 'package:flick_video_player/flick_video_player.dart';
 import 'package:wakelock/wakelock.dart';
+import 'package:flutter/services.dart';
 
 class PlayerScreen extends StatefulWidget {
   final String url;
@@ -8,69 +10,86 @@ class PlayerScreen extends StatefulWidget {
   PlayerScreen(this.url);
 
   @override
-  State<PlayerScreen> createState() => _PlayerScreenState();
+  _PlayerScreenState createState() => _PlayerScreenState();
 }
 
 class _PlayerScreenState extends State<PlayerScreen> {
-  VideoPlayerController? controller;
-  bool isPlaying = true;
+  FlickManager? flickManager;
 
   @override
   void initState() {
     super.initState();
-    initializePlayer();
     Wakelock.enable();
+    initializePlayer();
   }
 
   Future<void> initializePlayer() async {
-    controller = VideoPlayerController.network(widget.url);
-    await controller!.initialize();
-    controller!.play();
-    setState(() {}); // Trigger a rebuild after initialization
+    try {
+      flickManager = FlickManager(
+        videoPlayerController: VideoPlayerController.network(widget.url),
+        autoPlay: true,
+      );
+      setState(() {});
+    } catch (e) {
+      _showErrorDialog();
+    }
   }
 
   @override
   void dispose() {
     Wakelock.disable();
-    controller?.dispose();
+    flickManager?.dispose();
     super.dispose();
+  }
+
+  void _showErrorDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Error'),
+          content: Text('Failed to load the video.'),
+          actions: [
+            TextButton(
+              child: Text('OK'),
+              onPressed: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
+    return WillPopScope(
+      onWillPop: () async {
+        await SystemChrome.setPreferredOrientations(
+            [DeviceOrientation.portraitUp, DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
+        return true;
+      },
+      child: Scaffold(
         backgroundColor: Colors.black,
-        elevation: 0,
-        leading: InkWell(
-          onTap: () {
-            Navigator.pop(context);
-            Wakelock.disable();
-            controller!.dispose();
-          },
-          child: Icon(Icons.arrow_back_ios, color: Colors.white),
-        ),
-      ),
-      body: controller != null && controller!.value.isInitialized
-          ? InkWell(
-        onTap: () {
-          controller!.pause();
-        },
-        onDoubleTap: () {
-          controller!.play();
-        },
-        child: Center(
-          child: AspectRatio(
-            aspectRatio: 8 / 6,
-            child: VideoPlayer(controller!),
+        body: flickManager != null
+            ? FlickVideoPlayer(
+                flickManager: flickManager!,
+                 flickVideoWithControlsFullscreen: FlickVideoWithControls(
+            controls: FlickLandscapeControls(),
           ),
-        ),
-      )
-          : Center(child: CircularProgressIndicator(
-        strokeWidth: 1,
-        color: Colors.white,
-      )),
+                flickVideoWithControls: FlickVideoWithControls(
+                  controls: FlickPortraitControls(),
+                ),
+              )
+            : Center(
+                child: CircularProgressIndicator(
+                  strokeWidth: 1,
+                  color: Colors.white,
+                ),
+              ),
+      ),
     );
   }
 }

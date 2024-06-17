@@ -1,5 +1,6 @@
 import 'package:appzero/PlayerScreen.dart';
 import 'package:appzero/apiChannels.dart';
+import 'package:appzero/testing/testFullScreen.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
