@@ -1,8 +1,10 @@
+import 'package:appzero/logic/Controller.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:wakelock/wakelock.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class PlayerScreen extends StatefulWidget {
   final String url;
@@ -14,81 +16,69 @@ class PlayerScreen extends StatefulWidget {
 }
 
 class _PlayerScreenState extends State<PlayerScreen> {
-  FlickManager? flickManager;
+  final PlayerController playerController = Get.put(PlayerController());
 
   @override
   void initState() {
     super.initState();
     Wakelock.enable();
-    initializePlayer();
-  }
-
-  Future<void> initializePlayer() async {
-    try {
-      flickManager = FlickManager(
-        videoPlayerController: VideoPlayerController.network(widget.url),
-        autoPlay: true,
-      );
-      setState(() {});
-    } catch (e) {
-      _showErrorDialog();
-    }
+    playerController.initializePlayer(widget.url);
   }
 
   @override
   void dispose() {
     Wakelock.disable();
-    flickManager?.dispose();
+    playerController.disposePlayer();
     super.dispose();
-  }
-
-  void _showErrorDialog() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Error'),
-          content: Text('Failed to load the video.'),
-          actions: [
-            TextButton(
-              child: Text('OK'),
-              onPressed: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        await SystemChrome.setPreferredOrientations(
-            [DeviceOrientation.portraitUp, DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
-        return true;
-      },
-      child: Scaffold(
+    return Scaffold(
+      appBar: AppBar(
         backgroundColor: Colors.black,
-        body: flickManager != null
-            ? FlickVideoPlayer(
-                flickManager: flickManager!,
-                 flickVideoWithControlsFullscreen: FlickVideoWithControls(
-            controls: FlickLandscapeControls(),
-          ),
-                flickVideoWithControls: FlickVideoWithControls(
-                  controls: FlickPortraitControls(),
-                ),
-              )
-            : Center(
-                child: CircularProgressIndicator(
-                  strokeWidth: 1,
-                  color: Colors.white,
-                ),
-              ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back,color: Colors.white,),
+          onPressed: () {
+            playerController.disposePlayer();
+            Get.back();
+          },
+        ),
+      ),
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: GetBuilder<PlayerController>(
+          builder: (controller) {
+            return controller.flickManager != null
+                ? Center(
+                  child: Container(
+                    height: 300,
+                    width: MediaQuery.of(context).size.width ,
+                    child: FlickVideoPlayer(
+                        flickManager: controller.flickManager!,
+                        flickVideoWithControlsFullscreen: FlickVideoWithControls(
+                          
+                          controls: FlickLandscapeControls(
+                          
+                          
+                          ),
+                        ),
+                        flickVideoWithControls: FlickVideoWithControls(
+                          controls: FlickPortraitControls(
+                            
+                          ),
+                        ),
+                      ),
+                  ),
+                )
+                : Center(
+                    child: CircularProgressIndicator(
+                      strokeWidth: 1,
+                      color: Colors.white,
+                    ),
+                  );
+          },
+        ),
       ),
     );
   }
